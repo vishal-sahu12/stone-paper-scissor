@@ -83,12 +83,34 @@ body{
     height: 600px;
     display: flex;
     flex-wrap: wrap;
-    align-items:center;    
+    align-items:center;  
+    flex-direction: column; 
+    margin-top: 7rem; 
+}
+.first-row{
+    height: 220px;
+    display: flex;
+    padding-bottom: 0%;
+    align-items: end;
+
+}
+.gap{
+    width: 135px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
 }
 
+.second-row{
+    height: 130px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
 .images{
-   
-    width: 120px;
+     width: 120px;
     height: 120px;
     background: #FFFFFF;
     border-radius: 50%;
@@ -107,17 +129,23 @@ body{
     border: solid 1.2rem #BD00FF;
 }
 .paper-img{
+    margin-top: 75px;
     border: solid 1.2rem #FFA943;
 }
 
-.lines{
-    width: 135px;
-    border: solid 10px #000000;
-    
-}
-
 .stoneLines{
-    transform: rotate(190deg);
-
+    border: solid 10px #000000;  
 }
+
+.scissorLines{
+    z-index: -1;
+    border: solid 10px #000000;
+    transform: rotate(35deg); 
+}
+.paperLines{
+    z-index: -1;
+    border: solid 10px #000000; 
+    transform: rotate(145deg);
+}
+
 
